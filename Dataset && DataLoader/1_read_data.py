@@ -2,7 +2,7 @@
         掌握以下能力
         1、重写Dataset加载数据和对应的标签甚至还可以返回路径
 
-        2、transform数据转换
+        2、transform数据转换【训练引入随机性=>1个样本多次学习。测试不引入随机性便于结果复现】
         # Compose：依次执行里面的转换。Resize大小。ToTensor转为tensor格式。更多变换见transforms.py
         transform = transforms.Compose([transforms.Resize((256, 256)), transforms.ToTensor()])
         img = transform(img) # __call__让对象能够直接像函数一样调用
