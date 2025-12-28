@@ -1,3 +1,4 @@
+# 将原视频中的数据集转为现在的数据集的处理脚本【把图片的label 生成以图片名为文件名的txt文档】【非重点】
 import os
 
 root_dir = 'dataset/train'
